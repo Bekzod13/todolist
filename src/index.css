@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #212121;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: #77f;
+  display: flex;
+  flex-direction: column;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #212121;
+}
+.container form{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #212121;
+}
+.container form input,
+.container form button
+{
+  width: 79%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.container form button{
+  width: 20%;
+  background: #7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.list{
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #212121;
+}
+.todo{
+  width: 100%;
+  height: 40px;
+  background: #212121;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.todo span{
+  width: 80%;
+  height: 100%;
+  color: #fff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.todo button, 
+.clear{
+  width: 18%;
+  height: 100%;
+  text-transform: uppercase;
+  background: #fc0201;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.clear{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+}
