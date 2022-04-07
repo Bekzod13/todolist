@@ -45,7 +45,7 @@ const App=()=> {
         <button type='submit'><HiDocumentAdd/> add</button>
       </form>
       <div className="list">
-        {
+        { todos.length === 0 ? <h1 className="empty">Your list is empty.</h1>:
           todos.map((todo)=>(
             <div className="todo" key={todo.id}>
               <span>{todo.title}</span>
